@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".Activities.About">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:background="@drawable/custom_card_bg"
+       >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="10dp"
+                   android:fontFamily="@font/shahd"
+                   android:text="@string/app_name"
+                   android:textAlignment="center"
+                   android:textColor="@color/purple_200"
+                   android:textSize="33dp"
+                   android:textStyle="bold" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/shahd"
+                   android:text="تطوير: أيوب السرغيني"
+                   android:textAlignment="center"
+                   android:textColor="#4F4F51"
+                   android:textSize="22dp"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="right"
+               android:padding="5dp"
+               android:layout_weight="0"
+               android:orientation="vertical">
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:id="@+id/about_lottie"
+                   android:layout_width="110dp"
+                   android:layout_height="110dp"
+                   android:layout_gravity="right"
+                   app:lottie_autoPlay="true"
+                   app:lottie_fileName="icon.json"
+                   app:lottie_loop="true" />
+           </LinearLayout>
+
+
+       </LinearLayout>
+
+
+   </LinearLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/share_me_about"
+        android:layout_gravity="center"
+        android:elevation="30dp"
+        android:outlineSpotShadowColor="#050815"
+        android:padding="10dp"
+        app:cardBackgroundColor="#F9F9F9"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/shahd"
+                android:text="مشاركة التطبيق"
+                android:textColor="@color/purple_200"
+                android:textSize="33dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:id="@+id/rate_me_about"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        android:elevation="30dp"
+        android:outlineSpotShadowColor="#050815"
+        android:padding="10dp"
+        app:cardBackgroundColor="#F9F9F9"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/shahd"
+                android:text="تقييم التطبيق"
+                android:textColor="@color/purple_200"
+                android:textSize="33dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:id="@+id/follow_me_about"
+        android:layout_marginTop="20dp"
+        android:elevation="30dp"
+        android:outlineSpotShadowColor="#050815"
+        android:padding="10dp"
+        app:cardBackgroundColor="#F9F9F9"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/shahd"
+                android:text="تابعنا على مواقع التواصل"
+                android:textColor="@color/purple_200"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

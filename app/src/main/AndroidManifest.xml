@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/CurrentTheme">
+        <activity
+            android:name=".Activities.OnBoardActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Activities.About"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CategoriesQuotes"
+            android:exported="false"
+            android:theme="@style/customActionBar" />
+        <activity
+            android:name=".Activities.Splash"
+            android:exported="true"
+            android:theme="@style/customActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.favActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8294021418272792~1402904012" /> <!-- todo: change app_id admob -->
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="KT7LLyHun2SNtU5-L4reO6p50EzhlTl1nN1b6oK3IonziTJmuxk7Iax_f6RXHzyTZ3HAECrn0OZ93K2G531x2D" />
+    </application>
+
+</manifest>

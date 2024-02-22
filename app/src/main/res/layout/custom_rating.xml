@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="2dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#D5101028" />
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-75dp"
+                android:background="@drawable/round_back_white_stroke"
+                android:padding="15dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_back_white_fill" />
+
+                <ImageView
+                    android:id="@+id/emoji_rate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:padding="24dp"
+                    android:src="@drawable/etoile5" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rate_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shahd"
+                android:text=" مرحبا 👋 "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/shahd"
+                android:text="اذا استمتعت باستعمال تطبيقنا المرجوا عمل تقييم"
+                android:textAlignment="center"
+                android:textColor="#494848"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rating_bar_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:rating="4"
+                android:theme="@style/myRatingBar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="end"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/rate_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="#0288D1"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="قم بالتقييم الان"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16dp"
+                    tools:ignore="TextContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/later_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#DCA5A4A4"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
+                    android:text="خروج"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/dismiss_layout"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/manque" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

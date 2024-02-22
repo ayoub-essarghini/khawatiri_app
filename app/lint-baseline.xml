@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 7.3.1" type="baseline" client="gradle" dependencies="false" name="AGP (7.3.1)" variant="fatal" version="7.3.1">
+
+    <issue
+        id="MissingDefaultResource"
+        message="The dimen &quot;banner_height&quot; in values-night has no declaration in the base `values` folder; this can lead to crashes when the resource is queried in a configuration that does not match this qualifier"
+        errorLine1="    &lt;dimen name=&quot;banner_height&quot;>60dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values-night/dimens.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+</issues>
